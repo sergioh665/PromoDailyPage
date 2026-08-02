@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Promo Daily | A sua promo diária está aqui!</title>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							sans: ["Inter", "sans-serif"],
+						},
+						colors: {
+							telegram: "#2AABEE",
+							telegramHover: "#229ED9",
+							brandYellow: "#FFD700",
+							brandRed: "#FF3B30",
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body
+		class="bg-slate-900 text-slate-200 min-h-screen flex flex-col items-center justify-center p-4 antialiased"
+	>
+		<main
+			class="max-w-md w-full bg-slate-800 rounded-3xl shadow-2xl p-8 border border-slate-700 text-center relative overflow-hidden"
+		>
+			<div
+				class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-32 bg-gradient-to-b from-blue-500/20 to-transparent pointer-events-none"
+			></div>
+
+			<div class="relative inline-block mb-6">
+				<img
+					src="logo.png"
+					alt="Promo Daily Logo"
+					class="w-32 h-32 mx-auto rounded-full shadow-lg border-4 border-slate-700 object-cover z-10 relative"
+				/>
+			</div>
+
+			<h1 class="text-3xl font-extrabold text-white mb-1 tracking-tight">
+				PROMO <span class="text-brandYellow">DAILY</span>
+			</h1>
+			<p
+				class="text-sm font-semibold text-brandRed mb-6 tracking-widest uppercase"
+			>
+				Todo dia, uma nova promo
+			</p>
+
+			<p class="text-slate-300 mb-8 leading-relaxed text-sm">
+				Grupo focado em promoções e
+				<span class="text-white font-semibold">bugs</span> todos os dias com
+				produtos para revenda ou uso pessoal. Sua promo diária está aqui.
+			</p>
+
+			<a
+				href="https://t.me/promodailyvip"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="group flex items-center justify-center gap-3 w-full bg-telegram hover:bg-telegramHover text-white font-bold text-lg py-4 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(42,171,238,0.4)]"
+			>
+				<i
+					class="fa-brands fa-telegram text-2xl group-hover:scale-110 transition-transform duration-300"
+				></i>
+				<span>Entrar no Grupo VIP</span>
+			</a>
+
+			<div class="flex flex-wrap justify-center gap-2 mt-8">
+				<span class="text-xs bg-slate-700 px-3 py-1 rounded-full text-slate-300"
+					>🛒 Casa</span
+				>
+				<span class="text-xs bg-slate-700 px-3 py-1 rounded-full text-slate-300"
+					>💻 Tech</span
+				>
+				<span class="text-xs bg-slate-700 px-3 py-1 rounded-full text-slate-300"
+					>👗 Moda</span
+				>
+				<span class="text-xs bg-slate-700 px-3 py-1 rounded-full text-slate-300"
+					>📦 Imports</span
+				>
+			</div>
+		</main>
+
+		<footer class="mt-8 text-center text-slate-500 text-sm">
+			<p>© 2026 Promo Daily. Todos os direitos reservados.</p>
+		</footer>
+	</body>
+</html>
