@@ -27,6 +27,8 @@
 						colors: {
 							telegram: "#2AABEE",
 							telegramHover: "#229ED9",
+							whatsapp: "#25D366",
+							whatsappHover: "#1ebd59",
 							brandYellow: "#FFD700",
 							brandRed: "#FF3B30",
 						},
@@ -35,6 +37,7 @@
 			};
 		</script>
 	</head>
+
 	<body
 		class="bg-slate-900 text-slate-200 min-h-screen flex flex-col items-center justify-center p-4 antialiased"
 	>
@@ -59,7 +62,7 @@
 			<p
 				class="text-sm font-semibold text-brandRed mb-6 tracking-widest uppercase"
 			>
-				Todo dia, uma nova promo
+				Todo dia, uma nova promo!
 			</p>
 
 			<p class="text-slate-300 mb-8 leading-relaxed text-sm">
@@ -69,15 +72,27 @@
 			</p>
 
 			<a
+				href="https://www.instagram.com/jairmessiasbolsonaro/"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="group flex items-center justify-center gap-3 w-full bg-whatsapp hover:bg-whatsappHover text-white font-bold text-lg py-4 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(42,171,238,0.4)]"
+			>
+				<i
+					class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform duration-300"
+				></i>
+				<span>Entrar no Grupo VIP</span>
+			</a>
+
+			<a
 				href="https://t.me/promodailyvip"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="group flex items-center justify-center gap-3 w-full bg-telegram hover:bg-telegramHover text-white font-bold text-lg py-4 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(42,171,238,0.4)]"
+				class="group mt-4 flex items-center justify-center gap-3 w-full bg-telegram hover:bg-telegramHover text-white font-bold text-lg py-4 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(42,171,238,0.4)]"
 			>
 				<i
 					class="fa-brands fa-telegram text-2xl group-hover:scale-110 transition-transform duration-300"
 				></i>
-				<span>Entrar no Grupo VIP</span>
+				<span>Entrar no Canal do Telegram</span>
 			</a>
 
 			<div class="flex flex-wrap justify-center gap-2 mt-8">
@@ -93,6 +108,9 @@
 				<span class="text-xs bg-slate-700 px-3 py-1 rounded-full text-slate-300"
 					>📦 Imports</span
 				>
+				<!-- <span class="text-xs bg-slate-700 px-3 py-1 rounded-full text-slate-300"
+					>🐶 Pets</span
+				> -->
 			</div>
 		</main>
 
