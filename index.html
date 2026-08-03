@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Promo Daily | A sua promo diária está aqui!</title>
 
+		<link rel="icon" type="image/png" href="favicon.png" />
+
 		<link
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
 			rel="stylesheet"
@@ -32,10 +34,22 @@
 							brandYellow: "#FFD700",
 							brandRed: "#FF3B30",
 						},
+						keyframes: {
+							pulseScale: {
+								"0%, 100%": { transform: "scale(1)" },
+								"50%": { transform: "scale(1.03)" },
+							},
+						},
+						animation: {
+							"pulse-slow":
+								"pulseScale 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+						},
 					},
 				},
 			};
 		</script>
+
+		<script defer src="/_vercel/insights/script.js"></script>
 	</head>
 
 	<body
@@ -60,9 +74,9 @@
 				PROMO <span class="text-brandYellow">DAILY</span>
 			</h1>
 			<p
-				class="text-sm font-semibold text-brandRed mb-6 tracking-widest uppercase"
+				class="text-xs font-bold text-brandRed mb-6 tracking-wide uppercase max-w-xs mx-auto"
 			>
-				Todo dia, uma nova promo!
+				🔥 Junte-se a mais de 2.000 pessoas economizando todos os dias!
 			</p>
 
 			<p class="text-slate-300 mb-8 leading-relaxed text-sm">
@@ -71,29 +85,41 @@
 				produtos para revenda ou uso pessoal. Sua promo diária está aqui.
 			</p>
 
-			<a
-				href="https://www.instagram.com/jairmessiasbolsonaro/"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="group flex items-center justify-center gap-3 w-full bg-whatsapp hover:bg-whatsappHover text-white font-bold text-lg py-4 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(42,171,238,0.4)]"
-			>
-				<i
-					class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform duration-300"
-				></i>
-				<span>Entrar no Grupo VIP</span>
-			</a>
+			<div class="space-y-4">
+				<a
+					href="https://www.instagram.com/jairmessiasbolsonaro/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="group flex flex-col items-center justify-center w-full bg-whatsapp hover:bg-whatsappHover text-white font-bold py-3.5 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] animate-pulse-slow hover:animation-none hover:scale-105"
+				>
+					<div class="flex items-center gap-3 text-lg">
+						<i
+							class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform duration-300"
+						></i>
+						<span>Entrar no Grupo VIP</span>
+					</div>
+					<span class="text-[11px] font-normal text-green-100 opacity-85 mt-0.5"
+						>🟢 1.425 seguidores</span
+					>
+				</a>
 
-			<a
-				href="https://t.me/promodailyvip"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="group mt-4 flex items-center justify-center gap-3 w-full bg-telegram hover:bg-telegramHover text-white font-bold text-lg py-4 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(42,171,238,0.4)]"
-			>
-				<i
-					class="fa-brands fa-telegram text-2xl group-hover:scale-110 transition-transform duration-300"
-				></i>
-				<span>Entrar no Canal do Telegram</span>
-			</a>
+				<a
+					href="https://t.me/promodailyvip"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="group flex flex-col items-center justify-center w-full bg-telegram hover:bg-telegramHover text-white font-bold py-3.5 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(42,171,238,0.4)] animate-pulse-slow hover:animation-none hover:scale-105"
+				>
+					<div class="flex items-center gap-3 text-lg">
+						<i
+							class="fa-brands fa-telegram text-2xl group-hover:scale-110 transition-transform duration-300"
+						></i>
+						<span>Entrar no Canal do Telegram</span>
+					</div>
+					<span class="text-[11px] font-normal text-blue-100 opacity-85 mt-0.5"
+						>🔵 932 membros ativos</span
+					>
+				</a>
+			</div>
 
 			<div class="flex flex-wrap justify-center gap-2 mt-8">
 				<span class="text-xs bg-slate-700 px-3 py-1 rounded-full text-slate-300"
@@ -114,8 +140,18 @@
 			</div>
 		</main>
 
-		<footer class="mt-8 text-center text-slate-500 text-sm">
-			<p>© 2026 Promo Daily. Todos os direitos reservados.</p>
+		<footer class="mt-8 text-center text-slate-500 text-sm space-y-2">
+			<p>
+				© 2026 Promo Daily · Todos os direitos reservados
+				<a
+					href="https://wa.me/559991990357?text=Ol%C3%A1%21%20Acessei%20o%20site%20da%20Promo%20Daily%20e%20tenho%20interesse%20em%20fechar%20uma%20parceria."
+					target="_blank"
+					rel="noopener noreferrer"
+					class="inline-flex items-center gap-1.5 text-slate-400 hover:text-brandYellow transition-colors duration-200 underline decoration-dotted underline-offset-4"
+				>
+					Afilliate Company Hub
+				</a>
+			</p>
 		</footer>
 	</body>
 </html>
