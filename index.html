@@ -1,147 +1,157 @@
 <!doctype html>
 <html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Promo Daily | A sua promo diária está aqui!</title>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Promo Daily | A sua promo diária está aqui!</title>
+		<link rel="icon" type="image/png" href="favicon.png" />
 
-	<link rel="icon" type="image/png" href="favicon.png" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+			rel="stylesheet"
+		/>
 
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
 
-	<script src="https://cdn.tailwindcss.com"></script>
-
-	<script>
-		tailwind.config = {
-			theme: {
-				extend: {
-					fontFamily: {
-						sans: ["Inter", "sans-serif"],
-					},
-					colors: {
-						telegram: "#2AABEE",
-						telegramHover: "#229ED9",
-						whatsapp: "#25D366",
-						whatsappHover: "#1ebd59",
-						brandYellow: "#FFD700",
-						brandRed: "#FF3B30",
-					},
-					keyframes: {
-						pulseScale: {
-							"0%, 100%": { transform: "scale(1)" },
-							"50%": { transform: "scale(1.03)" },
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							sans: ["Inter", "sans-serif"],
+						},
+						colors: {
+							telegram: "#2AABEE",
+							telegramHover: "#229ED9",
+							whatsapp: "#25D366",
+							whatsappHover: "#1ebd59",
+							brandYellow: "#FFD700",
+							brandRed: "#FF3B30",
+						},
+						keyframes: {
+							pulseScale: {
+								"0%, 100%": { transform: "scale(1)" },
+								"50%": { transform: "scale(1.03)" },
+							},
+						},
+						animation: {
+							"pulse-slow":
+								"pulseScale 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
 						},
 					},
-					animation: {
-						"pulse-slow":
-							"pulseScale 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-					},
 				},
-			},
-		};
-	</script>
+			};
+		</script>
 
-	<script defer src="/_vercel/insights/script.js"></script>
-</head>
+		<script defer src="/_vercel/insights/script.js"></script>
+	</head>
 
-<body class="bg-slate-900 text-slate-200 min-h-screen flex flex-col items-center justify-center p-4 antialiased">
-	<main
-		class="max-w-md w-full bg-slate-800 rounded-3xl shadow-2xl p-8 border border-slate-700 text-center relative overflow-hidden">
-		<div
-			class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-32 bg-gradient-to-b from-blue-500/20 to-transparent pointer-events-none">
-		</div>
+	<body
+		class="bg-slate-900 text-slate-200 min-h-screen flex flex-col items-center justify-center p-4 antialiased"
+	>
+		<main
+			class="max-w-md w-full bg-slate-800 rounded-3xl shadow-2xl p-8 border border-slate-700 text-center relative overflow-hidden"
+		>
+			<div
+				class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-32 bg-gradient-to-b from-blue-500/20 to-transparent pointer-events-none"
+			></div>
 
-		<div class="relative inline-block mb-6">
-			<img src="logo.png" alt="Promo Daily Logo"
-				class="w-32 h-32 mx-auto rounded-full shadow-lg border-4 border-slate-700 object-cover z-10 relative" />
-		</div>
+			<div class="relative inline-block mb-6">
+				<img
+					src="logo.png"
+					alt="Promo Daily Logo"
+					class="w-32 h-32 mx-auto rounded-full shadow-lg border-4 border-slate-700 object-cover z-10 relative"
+				/>
+			</div>
 
-		<h1 class="text-3xl font-extrabold text-white mb-1 tracking-tight">
-			PROMO <span class="text-brandYellow">DAILY</span>
-		</h1>
-		<p class="text-xs font-bold text-brandYellow mb-6 tracking-wide uppercase max-w-xs mx-auto">
-			🔥 Junte-se a mais de 2.000 pessoas economizando todos os dias!
-		</p>
+			<h1 class="text-3xl font-extrabold text-white mb-1 tracking-tight">
+				PROMO <span class="text-brandYellow">DAILY</span>
+			</h1>
+			<p
+				class="text-xs font-bold text-brandRed mb-6 tracking-wide uppercase max-w-xs mx-auto"
+			>
+				🔥 Junte-se a mais de 2.000 pessoas economizando todos os dias!
+			</p>
 
-		<!-- <p class="text-slate-300 mb-8 leading-relaxed text-sm">
-			Grupo focado em promoções e
-			<span class="text-white font-semibold">bugs</span> todos os dias com
-			produtos para revenda ou uso pessoal. Sua promo diária está aqui.
-		</p> -->
+			<p class="text-slate-300 mb-8 leading-relaxed text-sm">
+				Grupo focado em promoções e
+				<span class="text-white font-semibold">bugs</span> todos os dias com
+				produtos para revenda ou uso pessoal. Sua promo diária está aqui.
+			</p>
 
-		<p class="text-slate-300 mb-8 leading-relaxed text-sm">
-			Grupo focado em promoções e
-			<span
-				class="relative inline-block mx-1 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-brandYellow rounded-sm">
-				<span class="relative text-slate-900 font-black tracking-wide px-1">bugs</span>
-			</span>
-			todos os dias com produtos para revenda ou uso pessoal. Sua promo diária está aqui.
-		</p>
+			<div class="space-y-4">
+				<a
+					href="https://www.instagram.com/jairmessiasbolsonaro/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="group flex flex-col items-center justify-center w-full bg-whatsapp hover:bg-whatsappHover text-white font-bold py-3.5 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] animate-pulse-slow hover:animation-none hover:scale-105"
+				>
+					<div class="flex items-center gap-3 text-lg">
+						<i
+							class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform duration-300"
+						></i>
+						<span>Entrar no Grupo VIP</span>
+					</div>
+					<span class="text-[11px] font-normal text-green-100 opacity-85 mt-0.5"
+						>🟢 1.425 seguidores</span
+					>
+				</a>
 
-		<div class="space-y-4">
-			<a href="https://www.instagram.com/jairmessiasbolsonaro/" target="_blank" rel="noopener noreferrer"
-				class="group flex flex-col items-center justify-center w-full bg-whatsapp hover:bg-whatsappHover text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(37,211,102,0.4)] animate-pulse-slow hover:animation-none hover:scale-105">
-				<div class="flex items-center gap-3 text-lg">
-					<i class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform duration-300"></i>
-					<span>Entrar no Grupo VIP</span>
-				</div>
-				<span class="text-[11px] font-normal text-green-100 opacity-85">💚 1.425 seguidores</span>
-			</a>
+				<a
+					href="https://t.me/promodailyvip"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="group flex flex-col items-center justify-center w-full bg-telegram hover:bg-telegramHover text-white font-bold py-3.5 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(42,171,238,0.4)] animate-pulse-slow hover:animation-none hover:scale-105"
+				>
+					<div class="flex items-center gap-3 text-lg">
+						<i
+							class="fa-brands fa-telegram text-2xl group-hover:scale-110 transition-transform duration-300"
+						></i>
+						<span>Entrar no Canal do Telegram</span>
+					</div>
+					<span class="text-[11px] font-normal text-blue-100 opacity-85 mt-0.5"
+						>🔵 932 membros ativos</span
+					>
+				</a>
+			</div>
 
-			<a href="https://t.me/promodailyvip" target="_blank" rel="noopener noreferrer"
-				class="group flex flex-col items-center justify-center w-full bg-telegram hover:bg-telegramHover text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(42,171,238,0.4)] animate-pulse-slow hover:animation-none hover:scale-105">
-				<div class="flex items-center gap-3 text-lg">
-					<i class="fa-brands fa-telegram text-2xl group-hover:scale-110 transition-transform duration-300"></i>
-					<span>Entrar no Canal do Telegram</span>
-				</div>
-				<span class="text-[11px] font-normal text-blue-100 opacity-85">💙 932 membros ativos</span>
-			</a>
+			<div class="flex flex-wrap justify-center gap-2 mt-8">
+				<span class="text-xs bg-slate-700 px-3 py-1 rounded-full text-slate-300"
+					>🛒 Casa</span
+				>
+				<span class="text-xs bg-slate-700 px-3 py-1 rounded-full text-slate-300"
+					>💻 Tech</span
+				>
+				<span class="text-xs bg-slate-700 px-3 py-1 rounded-full text-slate-300"
+					>👗 Moda</span
+				>
+				<span class="text-xs bg-slate-700 px-3 py-1 rounded-full text-slate-300"
+					>📦 Imports</span
+				>
+				<!-- <span class="text-xs bg-slate-700 px-3 py-1 rounded-full text-slate-300"
+					>🐶 Pets</span
+				> -->
+			</div>
+		</main>
 
-			<a href="https://www.instagram.com/seupromodaily/" target="_blank" rel="noopener noreferrer"
-				class="group flex flex-col items-center justify-center w-full bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 hover:from-purple-700 hover:via-pink-700 hover:to-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(225,48,108,0.4)] animate-pulse-slow hover:animation-none hover:scale-105">
-				<div class="flex items-center gap-3 text-lg">
-					<i class="fa-brands fa-instagram text-2xl group-hover:scale-110 transition-transform duration-300"></i>
-					<span>Seguir nossa página</span>
-				</div>
-				<span class="text-[11px] font-normal text-pink-100 opacity-85">🩷 332 seguidores</span>
-			</a>
-		</div>
-
-		<div class="grid grid-cols-3 gap-2 mt-8 mx-auto">
-			<span
-				class="text-xs bg-slate-700 px-3 py-1.5 rounded-full text-slate-300 text-center font-medium cursor-pointer transition-all duration-200 transform hover:bg-slate-600 hover:scale-105">🛒
-				Casa</span>
-			<span
-				class="text-xs bg-slate-700 px-3 py-1.5 rounded-full text-slate-300 text-center font-medium cursor-pointer transition-all duration-200 transform hover:bg-slate-600 hover:scale-105">🐶
-				Pets</span>
-			<span
-				class="text-xs bg-slate-700 px-3 py-1.5 rounded-full text-slate-300 text-center font-medium cursor-pointer transition-all duration-200 transform hover:bg-slate-600 hover:scale-105">💻
-				Tech</span>
-			<span
-				class="text-xs bg-slate-700 px-3 py-1.5 rounded-full text-slate-300 text-center font-medium cursor-pointer transition-all duration-200 transform hover:bg-slate-600 hover:scale-105">👗
-				Moda</span>
-			<span
-				class="text-xs bg-slate-700 px-3 py-1.5 rounded-full text-slate-300 text-center font-medium cursor-pointer transition-all duration-200 transform hover:bg-slate-600 hover:scale-105">💄
-				Beleza</span>
-			<span
-				class="text-xs bg-slate-700 px-3 py-1.5 rounded-full text-slate-300 text-center font-medium cursor-pointer transition-all duration-200 transform hover:bg-slate-600 hover:scale-105">📦
-				Imports</span>
-		</div>
-	</main>
-
-	<footer class="mt-8 text-center text-slate-500 text-sm space-y-2">
-		<p>
-			© 2026 Promo Daily · Todos os direitos reservados
-			<a href="https://wa.me/559991990357?text=Ol%C3%A1%21%20Acessei%20o%20site%20da%20Promo%20Daily%20e%20tenho%20interesse%20em%20fechar%20uma%20parceria."
-				target="_blank" rel="noopener noreferrer"
-				class="inline-flex items-center gap-1.5 text-slate-400 hover:text-brandYellow transition-colors duration-200 underline decoration-dotted underline-offset-4">
-				Afilliate Company Hub
-			</a>
-		</p>
-	</footer>
-</body>
-
+		<footer class="mt-8 text-center text-slate-500 text-sm space-y-2">
+			<p>
+				© 2026 Promo Daily · Todos os direitos reservados
+				<a
+					href="https://wa.me/559991990357?text=Ol%C3%A1%21%20Acessei%20o%20site%20da%20Promo%20Daily%20e%20tenho%20interesse%20em%20fechar%20uma%20parceria."
+					target="_blank"
+					rel="noopener noreferrer"
+					class="inline-flex items-center gap-1.5 text-slate-400 hover:text-brandYellow transition-colors duration-200 underline decoration-dotted underline-offset-4"
+				>
+					Afilliate Company Hub
+				</a>
+			</p>
+		</footer>
+	</body>
 </html>
